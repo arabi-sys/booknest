@@ -1,0 +1,100 @@
+.navbar {
+  background: #faf6ef; /* matches container background */
+  box-shadow: 0 2px 12px rgba(180, 140, 90, 0.09);
+  border-radius: 0 0 14px 14px;
+  padding: 0.4rem 2rem;
+  font-family: 'Georgia', serif;
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+  font-size: 1.15rem;
+  color: #a4620c !important;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.5px;
+  transition: color .18s;
+}
+
+.navbar-brand:hover, .navbar .nav-link:hover, .navbar .nav-link.active {
+  color: #428b46 !important;
+  background: #fff0dc;
+  border-radius: 10px;
+}
+
+.navbar-nav .nav-link {
+  padding: 0.49rem 1.19rem;
+  border-radius: 22px;
+  margin: 0 0.17rem;
+}
+
+.navbar .nav-link .nav-logo {
+  font-size: 1.25em;
+  vertical-align: middle;
+  margin-right: 0.7em;
+}
+
+.navbar .navbar-toggler {
+  border: none;
+  background: #ffd962;
+}
+
+.navbar .navbar-toggler:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #ffd962;
+}
+
+.navbar .nav-link.active {
+  background: #ffd96222;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    padding: 0.7rem 0.4rem;
+    border-radius: 0 0 12px 12px;
+  }
+  .navbar-collapse {
+    background: #fffbe7;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(180,140,90,0.08);
+    margin-top: 0.2rem;
+  }
+  .navbar-nav .nav-link {
+    margin: 0.13rem 0;
+  }
+}
+.nav-scroll-wrapper {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding-bottom: 0.2rem;
+  margin-right: 1rem;
+}
+
+.nav-scroll-wrapper::-webkit-scrollbar {
+  height: 7px;
+  background: #ffe5b4;
+  border-radius: 5px;
+}
+
+.nav-scroll-wrapper::-webkit-scrollbar-thumb {
+  background: #ffd962;
+  border-radius: 5px;
+}
+
+/* Make nav links inline-block for scroll */
+.nav-scroll-wrapper .navbar-nav > li {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Responsive tweak: allow scrolling on mobile */
+@media (max-width: 992px) {
+  .nav-scroll-wrapper {
+    margin-right: 0;
+    padding-bottom: 0.25rem;
+  }
+  .nav-scroll-wrapper .navbar-nav {
+    flex-wrap: nowrap !important;
+  }
+}

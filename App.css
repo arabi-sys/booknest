@@ -1,0 +1,125 @@
+.navbar {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  padding: 0.5rem 2rem;
+}
+
+.navbar .navbar-brand {
+  font-weight: bold;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem; /* Adds space between links */
+}
+
+.navbar-nav .nav-link {
+  color: #444;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #7b4f24;
+  text-decoration: underline;
+}
+
+.navbar-nav.ms-auto {
+  margin-left: auto;
+  gap: 1rem;
+}
+.navbar-toggler {
+  border: none;
+  background: transparent;
+}
+
+.navbar .nav-item {
+  display: flex;
+  align-items: center;
+}
+
+
+/* Bookstore Grid Styles — 3 horizontal books, spaced */
+.bookstore-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;          /* Space between each book */
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.book-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  width: 320px;         /* Adjust for 3 per row */
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  transition: box-shadow 0.2s;
+}
+
+.book-card:hover {
+  box-shadow: 0 4px 16px rgba(123, 79, 36, 0.2);
+}
+
+.book-card img {
+  width: 140px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.book-card .book-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.book-card .book-author {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 0.7rem;
+}
+
+.book-card .book-description {
+  font-size: 0.95rem;
+  color: #888;
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
+
+.book-card .book-price {
+  font-size: 1.05rem;
+  color: #7b4f24;
+  font-weight: 500;
+  margin-bottom: 0.6rem;
+}
+
+/* Responsive — stack cards for mobile */
+@media (max-width: 900px) {
+  .book-card {
+    width: 45vw;
+    min-width: 240px;
+  }
+  .bookstore-grid {
+    gap: 1.2rem;
+  }
+}
+@media (max-width: 600px) {
+  .book-card {
+    width: 98vw;
+  }
+  .bookstore-grid {
+    gap: 0.8rem;
+  }
+}

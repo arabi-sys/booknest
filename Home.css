@@ -1,0 +1,133 @@
+body {
+  background: linear-gradient(120deg, #faf6ef 0%, #fffbe7 60%, #f7e4c0 100%);
+}
+
+/* The container gets a slight soft shadow and overlay texture */
+.container {
+  background: #faf6ef url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+  border-radius: 18px;
+  box-shadow: 0 4px 32px rgba(84, 58, 42, 0.13);
+  padding: 40px 24px;
+  margin-top: 28px;
+}
+
+h1.display-3, h2 {
+  font-family: 'Georgia', serif;
+  color: #a4620c; /* richer heading color */
+  letter-spacing: 1px;
+  text-shadow: 0 1px 0 #fffbe7;
+}
+
+.lead {
+  color: #635c53;
+  font-size: 1.24rem;
+}
+
+a.btn-success,
+.btn-success {
+  background: #428b46;
+  border: none;
+  color: #fff;
+  box-shadow: 0 2px 10px #428b4640;
+}
+a.btn-success:hover,
+.btn-success:hover {
+  background: #306d35;
+  color: #fff;
+}
+
+a.btn-warning,
+.btn-warning {
+  background: #ffd962;
+  border: none;
+  color: #7b4f24;
+}
+a.btn-warning:hover,
+.btn-warning:hover {
+  background: #ffe5b4;
+  color: #7b4f24;
+}
+
+.card {
+  background: #fffbe7;
+  border-radius: 16px;
+  border: none;
+  transition: box-shadow 0.2s;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card:hover {
+  box-shadow: 0 8px 28px rgba(44,32,15,0.15);
+  transform: translateY(-3px) scale(1.025);
+}
+
+.card-title {
+  color: #a4620c;
+  font-weight: 700;
+  font-family: 'Georgia', serif;
+}
+
+.card-text {
+  color: #90866b;
+  font-size: 1.01rem;
+}
+
+.card.border-primary {
+  border: 2px solid #ffd962 !important;
+  background: #f7f4e5;
+}
+
+.card.border-primary h5 {
+  font-family: 'Georgia', serif;
+  color: #a4620c;
+}
+
+.card-body span {
+  font-size: 2.3rem;
+  display: block;
+}
+
+.card.text-center {
+  transition: box-shadow 0.2s;
+  cursor: pointer;
+}
+.card.text-center:hover {
+  box-shadow: 0 6px 20px rgba(153,121,33,0.13);
+  background: #fffbe7;
+  transform: scale(1.03);
+}
+
+.featured-book-card {
+  width: 16rem;
+  min-height: 390px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.featured-book-card .card-img-top {
+  height: 220px;
+  object-fit: cover;
+  border-radius: 0.25rem 0.25rem 0 0;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .container {
+    padding: 16px 4px;
+  }
+  .display-3 {
+    font-size: 2.1rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 767px) {
+  .featured-book-card {
+    width: 98%;
+    min-height: unset;
+    margin-bottom: 1rem;
+  }
+}
