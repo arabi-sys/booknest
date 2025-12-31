@@ -1,0 +1,44 @@
+/* sidebar.css - styles for VerticalNavbar component */
+.sidebar {
+  width: 220px;
+  padding: 1rem;
+  border-right: 1px solid #e9ecef;
+  height: calc(100vh - 80px); /* adjust if you have taller header */
+  position: sticky;
+  top: 80px;
+  overflow-y: auto;
+}
+
+.sidebar .nav-link {
+  color: #495057;
+  padding: 0.5rem 0.5rem;
+  border-radius: 6px;
+  transition: background-color .15s, color .15s;
+  font-weight: 500;
+}
+
+.sidebar .nav-link .icon {
+  font-size: 1.15rem;
+  display: inline-flex;
+  width: 26px;
+  justify-content: center;
+}
+
+.sidebar .nav-link:hover {
+  background: #f8f9fa;
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+.sidebar .nav-link.active {
+  background: #0d6efd;
+  color: #fff !important;
+  box-shadow: 0 2px 6px rgba(13,110,253,0.12);
+}
+
+@media (max-width: 767.98px) {
+  /* hide sidebar on xs screens; the top navbar remains visible */
+  .sidebar {
+    display: none !important;
+  }
+}
